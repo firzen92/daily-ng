@@ -10,7 +10,9 @@ export class AlgorithmsComponent implements OnInit {
   smallestNumber: number;
   altArr: number[];
   originalArray = [-4, -6, 4, 22, -10, -56, 76, 11, 5, -99];
+  numbersArr = [8,9,9];
   frequency: number[];
+  addOneResult: number [];
 
   constructor() {}
 
@@ -19,7 +21,26 @@ export class AlgorithmsComponent implements OnInit {
     this.altArr = this.altArray(this.originalArray);
     this.frequency = this.getFreq([2, 3, 2, 3, 4, 5]);
     this.rotateArray(this.originalArray, 3);
+    this.addOneResult = this.addOne([...this.numbersArr], this.numbersArr.length);
   }
+
+
+  addOne(arr, n) {
+    let newArr = [0, ...arr];
+    function add(a, i) {
+      if(a[i] < 9) {
+        a[i] = a[i] + 1;
+        return;
+      }
+      a[i] = 0;
+      i--;
+      add(a, i);
+    }
+    add(newArr, n);
+    return newArr[0] == 0?newArr.slice(1):newArr;
+  }
+
+
 
   rotateArray(arr, d) {
     arr.push(...arr.splice(0, d));
