@@ -40,8 +40,6 @@ export class AlgorithmsComponent implements OnInit {
     return newArr[0] == 0?newArr.slice(1):newArr;
   }
 
-
-
   rotateArray(arr, d) {
     arr.push(...arr.splice(0, d));
   }
