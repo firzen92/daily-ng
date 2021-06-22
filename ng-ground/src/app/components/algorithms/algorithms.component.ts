@@ -36,7 +36,7 @@ export class AlgorithmsComponent implements OnInit {
       i--;
       add(a, i);
     }
-    add(newArr, n);
+    add(newArr, n+1);
     return newArr[0] == 0?newArr.slice(1):newArr;
   }
 
