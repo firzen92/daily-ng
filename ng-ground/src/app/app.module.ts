@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { AlgorithmsComponent } from './components/algorithms/algorithms.component';
 import { AlgorithmsZeroComponent } from './components/algorithms-zero/algorithms-zero.component';
 import { AlgorithmsMinusComponent } from './components/algorithms-minus/algorithms-minus.component';
+import { PracticeComponent } from './components/practice/practice.component';
+import { AlgorithmsMinusOneComponent } from './algorithms-minus-one/algorithms-minus-one.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AlgorithmsComponent,
     AlgorithmsZeroComponent,
-    AlgorithmsMinusComponent
+    AlgorithmsMinusComponent,
+    PracticeComponent,
+    AlgorithmsMinusOneComponent
   ],
   imports: [
     BrowserModule,

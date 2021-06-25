@@ -75,7 +75,7 @@ export class AlgorithmsComponent implements OnInit {
     return n + 1;
   }
 
-  //Alternate positive and negative numbers]
+  //Alternate positive and negative numbers
 
   altArray(A) {
     let pos = [];

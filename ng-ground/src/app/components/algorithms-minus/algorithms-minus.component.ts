@@ -20,6 +20,7 @@ export class AlgorithmsMinusComponent implements OnInit {
     this.reqAns2 = this.solution2("aaaa", [3, 4, 5, 6]);
   }
 
+
   solution2(S, C) {
     // write your code in JavaScript (Node.js 8.9.4)
     let prev = S[0];
